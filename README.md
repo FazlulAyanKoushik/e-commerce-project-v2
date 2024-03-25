@@ -1,3 +1,75 @@
+## Django E-Commerce Project
+
+### Project Description:
+
+This project is an e-commerce website built using Django, a high-level Python web framework. The website allows users to browse products, add them to the cart, and place orders. It includes features such as user authentication, product search, order management, and payment processing.
+
+### Getting Started:
+
+1. Clone the repository:
+
+```bash
+git clone  git@github.com:FazlulAyanKoushik/e-commerce-project-v2.git
+```
+
+2. Create a virtual environment:
+
+```bash
+python3 -m venv env
+```
+
+3. Activate the virtual environment:
+
+on Windows:
+```bash
+venv\Scripts\activate
+```
+
+on macOS and Linux:
+```bash
+source venv/bin/activate
+```
+
+4. Install the project dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+### Database Setup:
+
+1. Create the database tables:
+
+```bash
+python manage.py migrate
+```
+
+2. Create a superuser account:
+
+```bash
+python manage.py createsuperuser
+```
+
+3. Start the development server:
+
+```bash
+python manage.py runserver
+```
+
+### Project Structure:
+
+The project is organized into the following Django apps:
+
+- **accounts**: Manages user authentication and profile management.
+- **cart**: Handles cart management and order processing.
+- **core**: Contains common utilities and settings for the project.
+- **orders**: Manages order creation, processing, and tracking.
+- **products**: Handles product management and browsing.
+- **payment**: Integrates payment processing using Stripe.
+- **search**: Implements product search functionality.
+- **staticfiles**: Contains static files such as CSS, JavaScript, and images.
+
+
 ## Tools for Testing:
 
 ### pytest
