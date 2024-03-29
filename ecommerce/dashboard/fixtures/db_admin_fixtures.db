@@ -1,0 +1,9 @@
+[
+    {
+        "model": "core.user",
+        "pk": 1,
+        "fields": {
+            "phone_number": "01515620305",
+            "full_name": "Fazlul Ayan koushik",
+    }
+]

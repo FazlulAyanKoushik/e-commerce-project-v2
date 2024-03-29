@@ -9,5 +9,6 @@ For more information on fixtures and configuration options in pytest, refer to t
 """
 
 pytest_plugins = [
+    "common.tests.fixtures",
     "common.tests.selenium_base",
 ]

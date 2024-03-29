@@ -10,9 +10,9 @@ def chrome_browser_instance(request):
     :param request:
     :return:
     """
-    options = Options()
-    options.headless = True
-    browser = webdriver.Chrome(options=options)
+    options = Options()  # create a ChromeOptions instance
+    options.headless = True  # run the browser in headless mode (without GUI)
+    browser = webdriver.Chrome(options=options)  # create a Chrome browser instance
     yield browser  # provide the fixture value
     browser.close()  # teardown
     # request.addfinalizer(lambda: browser.quit()) # teardown
